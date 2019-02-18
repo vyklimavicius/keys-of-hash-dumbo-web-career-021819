@@ -5,7 +5,7 @@ class Hash
   def keys_of(*argument)
     # code goes here
     # new_array = Array.new
-    map do |key,value|
+    collect do |key,value|
       if argument.include?(value)
          key
       end
